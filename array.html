@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array in JavaScript Demo</title>
+</head>
+<body>
+	<script>
+		function arr() {
+			var arr=["Saravana",19,490];
+			for(i=0;i<arr.length;i++)
+			{
+				document.writeln(arr[i]);
+			}
+		}
+		function arr2()
+		{
+			var arr2= new Array("Saravana",19,490);
+			for(i=0;i<arr2.length;i++)
+			{
+				document.writeln(arr2[i]);
+			}
+
+		}
+		function arr3() {
+			var arr3 = new Array();
+			arr3[0]="Saravana";
+			arr3[1]="Hello";
+			arr3[2]="Byeee";
+			for(i=0;i<arr3.length;i++)
+			{
+				document.writeln(arr3[i]);
+			}
+		}
+		arr();
+		arr2();
+		arr3();
+	</script>
+</body>
+</html>
