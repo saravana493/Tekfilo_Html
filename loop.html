@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loops in JavaScript Demo</title>
+</head>
+<body>
+	<script>
+		function lop(n) {
+			var a=0,b=0;
+			for(i=0;i<n;i++)
+			{
+				document.writeln(i+"<br/>");
+			}
+			while(a<n)
+			{
+				document.writeln(a+"<br/>");
+				a++;
+			}
+			do
+			{
+				document.writeln(b+"<br/>");
+				b++;
+			}while(b<=n);
+		}
+		lop(5);
+	</script>
+</body>
+</html>
