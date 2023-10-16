@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Objects in JavaScript Demo</title>
+</head>
+<body>
+	<script>
+		var id,name,age,mark;
+		function getdata(id,name,age,mark) {
+			this.id=id;
+			this.name=name;
+			this.age=age;
+			this.mark=mark;
+		}
+		function display()
+		{
+			document.writeln("Your ID is ",m.id);
+			document.writeln("Your Name is ",m.name);
+			document.writeln("Your Age is ",m.age);
+			document.writeln("Your Mark is ",m.mark);
+		}
+		m=new getdata(101,"Saravana",19,490);
+		display();
+	</script>
+</body>
+</html>
