@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>If-Else in JavaScript Demo</title>
+		<script>
+		function call(x,y) {
+			if(x<y)
+			{
+				document.writeln("X is Less Than Y");
+
+			}
+			else
+			{
+				document.writeln("Y is Less Than X");
+			}
+
+		}
+		function call2(x,y,z)
+		{
+			
+			if(x>y)
+			{
+				if(x>z)
+				{
+
+					document.writeln("X is Greater");
+				}
+
+			}
+			else if(y>z)
+			{
+				document.writeln("Y is Greater");
+			}
+			else
+			{
+				document.writeln("Z is Greater");
+			}
+
+		}
+		call(15,10);
+		call2(20,10,30);
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>
