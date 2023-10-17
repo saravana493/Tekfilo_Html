@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function msg()
+		{
+
+			alert("Welcome to i18n Solutions");
+		}
+		function msg2()
+		{
+			var a=confirm("Are You Sure visit our Company ");
+			if(a==true)
+			{
+				alert("Loading...."+"Click Ok to Visit");
+				open("https://www.tekfilo.com/#/home");
+			}
+			else
+			{
+				alert("You Cancel the Visit...?");
+			}
+		}
+		function msg3()
+		{
+			var p=prompt("Your Name ?");
+			alert("I am "+p);
+		}
+		function msg4()
+		{
+		setTimeout(
+		function()
+		{
+		
+			alert("It Was Display After 5 Seconds");
+		},5000);
+	}
+
+	</script>
+	<input type="button" value="Alert" onclick="msg()"/>
+	<input type="button" value="Confirm" onclick="msg2()"/>
+	<input type="button" value="Prompt" onclick="msg3()">
+	<input type="button" value="Set Time" onclick="msg4()">
+</body>
+</html>
