@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classes in JavaScript Demo</title>
+</head>
+<body>
+<script>
+	class demo
+	{
+		constructor(name,age,mark)
+		{
+			this.name=name;
+			this.age=age;
+			this.mark=mark;	
+		}
+		display()
+		{
+			console.log(this.name);
+			console.log(this.age);
+			console.log(this.mark);
+		}
+	}
+	var d=new demo("Saravana",19,490);
+	d.display();
+</script>
+</body>
+</html>
