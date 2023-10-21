@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object Mthods in JavaScript</title>
+</head>
+<body>
+<script>
+	var ob={id:101,age:19}
+	var ob2=Object.freeze(ob);
+	ob2.id=102;
+	ob2.age=20;
+	console.log("Id is "+ob2.id+" age is "+ob2.age);
+</script>
+</body>
+</html>
