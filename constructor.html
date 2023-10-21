@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Constructor in JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+	class fun {
+
+		constructor(id,name,mark)
+		{
+			this.id=id;
+			this.name=name;
+			this.mark=mark;
+		}
+		display()
+		{
+			console.log(this.id);
+			console.log(this.name);
+			console.log(this.mark);
+		}
+	}
+	var obj=new fun(1,"Saravana",499);
+	obj.display();
+</script>
+</body>
+</html>
