@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object Method IsFrozen in JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+	function fun() {
+		var ob={
+			id:1,
+			name:"Saravana",
+			degree:"B.Sc"
+		}
+		console.log(Object.isFrozen(ob));
+		Object.freeze(ob);
+		console.log(Object.isFrozen(ob));
+	}
+	fun();
+</script>
+</body>
+</html>
