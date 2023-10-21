@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		function f() {
+			var ob=new Object();
+			ob.name="Saravana"
+			ob.age="21"
+			ob.mark="450"
+			var ob2=new Object();
+			ob2.name="Hari"
+			ob2.age="22"
+			ob2.mark="400"
+			console.log(ob.name+" "+ob.age+" "+ob.mark);
+			console.log(ob2.name+" "+ob2.age+" "+ob2.mark);
+			ob.name="praveen";
+			console.log(ob.name+" "+ob.age+" "+ob.mark);
+			ob3=ob;
+			ob3.name="Mohan";
+			ob3.age="20"
+			console.log(ob.name+" "+ob.age+" "+ob.mark);
+			console.log("This ob3 "+ob3.name+" "+ob3.age+" "+ob3.mark);
+		}
+		f();
+	</script>
+</body>
+</html>
