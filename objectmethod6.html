@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object Method IS in JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+	function fun() {
+		var ob= new Object();
+		ob.name="Saravana"
+		var ob2= new Object();
+		ob2.name="Saravana"
+		console.log(Object.is(ob,ob2));
+		console.log(Object.isSealed(ob));
+		Object.seal(ob);
+		console.log(Object.isSealed(ob));
+	}
+	fun();
+</script>
+</body>
+</html>
