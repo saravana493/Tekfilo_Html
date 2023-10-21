@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object Method isextensible() in JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+
+		const ob=
+		{
+			id:101,
+			name:"Saravana",
+			mail:function(){ return "Saravana@gmail.com"}
+		}
+		console.log(ob.mail);
+		console.log(typeof name);
+		console.log(typeof ob);
+		change= JSON.stringify(ob);
+		console.log(change);
+		change2=JSON.parse(change);
+		console.log(change2);
+		console.log(change2.id);
+</script>
+</body>
+</html>
