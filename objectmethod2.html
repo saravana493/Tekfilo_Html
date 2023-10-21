@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Object Method getownproperty </title>
+</head>
+<body>
+  <script type="text/javascript">
+    const object1 = {  
+  property1: "Saravana" 
+}  
+const object2 = {  
+  property2: 34  
+}  
+var ob= new Object();
+ob.id=101;
+const descriptor1 = Object.getOwnPropertyDescriptor(object1, 'property1');  
+const descriptor2 = Object.getOwnPropertyDescriptor(object2, 'property2');  
+var descriptor3 = Object.getOwnPropertyDescriptor(ob,'id');
+console.log(descriptor1.enumerable);  
+console.log(descriptor2.enumerable);  
+console.log(descriptor3.enumerable);  
+console.log(descriptor1.value);  
+console.log(descriptor2.value);  
+  </script>
+</body>
+</html>
