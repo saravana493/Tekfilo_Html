@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object Method PreventExtensible in JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+	var ob={
+		name:"Saravana",
+		age:21
+	}
+	ob.mark=450;
+	Object.preventExtensions(ob);
+	ob.address="Salem";
+	console.log(ob);
+</script>
+</body>
+</html>
+//cannot add the new key and value after using preventextension
