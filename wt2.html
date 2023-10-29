@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Program 2</title>
+</head>
+<body>
+<script type="text/javascript">
+    function fun() {
+        var textbox=document.querySelectorAll('input[type="text"]');
+        var empty=[];
+        for(let i=0;i<textbox.length;i++)
+        {
+            if(textbox[i].value==='')
+            {
+            empty.push(textbox[i].id);
+            }
+        }
+        if(empty.length>0)
+        {
+            alert("The following elements are empty "+empty.join(','));
+        }
+        else
+        {
+            alert("All the Elements are Fill");
+        }
+
+    }
+</script>
+<input type="text" id="text1"/>
+<input type="text" id="text2"/>
+<input type="text" id="text3"/>
+<input type="submit" value="Submit" onclick="fun()"/>
+</body>
+</html>
