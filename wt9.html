@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo Program 9</title>
+</head>
+<body>
+<script type="text/javascript">
+	function fun() {
+		alert("Successfully placed your order");
+		return true;
+	}
+</script>
+<label>Enter Your Major Dish</label><br>
+<select id="major" multiple>
+	<option value="chicken_rice">Chicken Rice</option>
+	<option value="chicken_biriyani">Chicken Biriyani</option>
+	<option value="mutton_biriyani">Mutton Biriyani</option>
+	<option value="shawarma">Shawarma</option>
+</select><br><br>
+<label>Enter Your Side Dish</label><br>
+<select value="side" multiple>
+	<option value="chicken65">Chicken 65</option>
+	<option value="pepperchicken">Pepper Chicken</option>
+	<option value="mutton65">Mutton 65</option>
+	<option value="grill">Grill</option>
+</select><br><br>
+<label>Enter Your Soft Drinks</label><br>
+<select value="drinks">
+	<option value="pepsi">Pepsi</option>
+	<option value="slice">Slice</option>
+	<option value="maaza">Maazza</option>
+	<option value="cocacola">Coca-Cola</option>
+</select><br><br>
+<input type="submit" value="Submit" onclick="return fun()">
+</body>
+</html>
