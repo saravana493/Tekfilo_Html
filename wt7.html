@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Demo Program 7</title>
+</head>
+<body>
+<script type="text/javascript">
+       function fun() {
+                     var eng=parseFloat(document.getElementById("english").value);
+                     var tam=parseFloat(document.getElementById("tamil").value);
+                     var com=parseFloat(document.getElementById("computer").value);
+                     var total=com+tam+eng;
+                     var avg=total/3;
+                     var result="";
+                     var grade="";
+                     if(com>=40 && eng>=40 && tam>=40)
+                     {
+                            result="pass";
+                            if(avg>=90)
+                            {
+                                   grade="A";
+                            }
+                            else if(avg>=80)
+                            {
+                                   grade="B";
+                            }
+                            else if(avg>=70)
+                            {
+                                   grade="C";
+                            }
+                            else if(avg>=60)
+                            {
+                                   grade="D";
+                            }
+                            else if(avg>=50)
+                            {
+                                   grade="E";
+                            }
+                            else
+                            {
+                                   grade="N/A";
+                                   result="fail";
+                            }
+                     }
+                     document.getElementById("result").innerHTML="Result : "+result;
+                     document.getElementById("grade").innerHTML="Grade : "+grade;
+
+                     document.getElementById("total").innerHTML="Total : "+total;
+                     document.getElementById("avg").innerHTML="Average : "+avg;
+              }       
+</script>
+<form>
+<input type="number" id="english"/>
+<input type="number" id="tamil"/>
+<input type="number" id="computer"/>
+<button type="button" onclick="fun()">Submit</button>
+</form>
+<p>Result</p>
+<p id="total"></p>
+<p id="avg"></p>
+<p id="result"></p>
+<p id="grade"></p>
+</body>
+</html>
