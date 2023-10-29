@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo Program 8</title>
+</head>
+<body>
+<script type="text/javascript">
+	function fun() {
+		
+	
+	var salary= parseFloat(document.getElementById("salary").value);
+	var name=document.getElementById("name").value;
+	var da=salary*0.1;
+	var hra=salary*0.2;
+	var pf=salary*0.12;
+	var tax=salary*0.15;
+	var grosspay=salary+da+hra;
+	var total=pf+tax;
+	var net=grosspay-total;
+	document.getElementById("namedis").innerHTML="Name : "+name;
+	document.getElementById("salarydis").innerHTML="Salary : "+salary;
+	document.getElementById("dadis").innerHTML="DA : "+da;
+	document.getElementById("hradis").innerHTML="HRA : "+hra;
+	document.getElementById("pfdis").innerHTML="PF : "+pf;
+	document.getElementById("taxdis").innerHTML="TAX : "+tax;
+	document.getElementById("grosspaydis").innerHTML="Gross Pay : "+grosspay;
+	document.getElementById("totaldis").innerHTML="Total Deduction : "+total;
+	document.getElementById("netdis").innerHTML="Net Salary : "+net;
+}
+</script>
+<form>
+<input type="text" id="name"/>
+<input type="number" id="salary"/>
+<input type="button" value="Submit" onclick="fun()">
+</form>
+<P>Details</P>
+<p id="namedis"></p>
+<p id="salarydis"></p>
+<p id="dadis"></p>
+<p id="hradis"></p>
+<p id="pfdis"></p>
+<p id="taxdis"></p>
+<p id="grosspaydis"></p>
+<p id="totaldis"></p>
+<p id="netdis"></p>
+</body>
+</html>
