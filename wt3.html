@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo Program 3</title>
+</head>
+<body>
+<script type="text/javascript">
+	function fun() {
+		var expression=document.getElementById("expression").value;
+		var result;
+		try
+		{
+			result=eval(expression);
+			if(isNaN(result))
+			{
+				throw new Error("Invalid Expression");
+			}
+			document.getElementById("result").innerHTML="Result : "+result;
+		}
+
+			catch(error)
+			{
+				document.getElementById("result").innerHTML="Error : "+error.message;
+			}
+		
+	}
+</script>
+<form>
+<input type="text" id="expression"/>
+<input type="button" value="Submit" onclick="fun()"/>
+</form>
+<div id="result"></div>
+</body>
+</html>
